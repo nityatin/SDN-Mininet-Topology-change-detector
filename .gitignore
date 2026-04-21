@@ -1,0 +1,4 @@
+topology_changes.log
+__pycache__/
+*.pyc
+*.log
