@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
 # custom_topology.py
 # Mininet topology for SDN Topology Change Detector
-# Triangle: s1 -- s2 -- s3 -- s1  (redundant paths)
-# Hosts: h1@s1, h2@s2, h3@s3, h4@s3
+# Topology:
+    # 3 Switches in a Triangle: s1 -- s2 -- s3 -- s1  (redundant paths)
+    # 4 Hosts: h1@s1, h2@s2, h3@s3, h4@s3
+    # Remote Ryu controller on 127.0.0.1:6653
+
 
 from mininet.net    import Mininet
 from mininet.node   import RemoteController, OVSKernelSwitch
