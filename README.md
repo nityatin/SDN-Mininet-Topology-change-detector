@@ -94,22 +94,35 @@ Traffic reroutes via alternate path (s1→s3→s2).
 ---
 
 ## Proof of Execution
-
 ### Switch Connected & Links Discovered
-![Switch connected](screenshots/01_switch_connected.png)
-![Links added](screenshots/02_link_added.png)
+<img width="950" height="893" alt="ryu-manager ss" src="https://github.com/user-attachments/assets/a47a2e65-e9ba-476f-9af9-d975e3c32764" />
+
+### Starting Mininet and Topology
+<img width="1478" height="356" alt="mininet startup" src="https://github.com/user-attachments/assets/02f75928-c7e2-4828-889d-c111e756d3d2" />
 
 ### Scenario 1 — Connectivity
-![Pingall](screenshots/03_pingall.png)
-![Flow table s1](screenshots/04_flow_table_s1.png)
-![iperf](screenshots/05_iperf.png)
+Pingall and Ping statistics 
+<img width="1117" height="828" alt="ping" src="https://github.com/user-attachments/assets/325b4339-2ac5-4bb4-8f85-8e714a68c016" />
+
+Flow Tables
+<img width="1854" height="325" alt="flow tables_final" src="https://github.com/user-attachments/assets/3001f592-7183-41cc-87cc-6c7261b17f45" />
+
+iperf
+<img width="744" height="96" alt="iperf1" src="https://github.com/user-attachments/assets/3a536713-2a4a-47a0-917d-930b2e8f59d0" />
+
 
 ### Scenario 2 — Link Failure & Recovery
-![Link failure](screenshots/06_link_failure.png)
-![Link restored](screenshots/07_link_restored.png)
+<img width="372" height="36" alt="links1s2down" src="https://github.com/user-attachments/assets/5043abb8-b498-4649-9259-6cef09fb40c5" />
+
+<img width="845" height="442" alt="link failure scenario_deltet" src="https://github.com/user-attachments/assets/f5f71581-e982-4825-84db-bda81c990448" />
+Now recovering the lost links:
+<img width="672" height="58" alt="links1s2UP" src="https://github.com/user-attachments/assets/5f241ded-d8fc-4e31-8031-a92ba0905757" />
+
+<img width="765" height="268" alt="link failure scenario_add" src="https://github.com/user-attachments/assets/bd37c302-e75c-41a7-a0e1-eccef0ef058b" />
 
 ### Topology Change Log
-![Log file](screenshots/08_topology_log.png)
+<img width="1066" height="923" alt="topo change logs" src="https://github.com/user-attachments/assets/a3e4a4c0-9322-4373-8eb7-ab7a787edf25" />
+
 
 ---
 
