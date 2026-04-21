@@ -156,7 +156,7 @@ class TopologyChangeDetector(app_manager.RyuApp):
         datapath.send_msg(out)
 
     @set_ev_cls(ofp_event.EventOFPPortStatus, MAIN_DISPATCHER)
-    def port_status_handler(self, ev):
+    def port_status_handler(self, ev):#link failure detection
         msg     = ev.msg
         dp      = msg.datapath
         ofproto = dp.ofproto
