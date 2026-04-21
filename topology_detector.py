@@ -1,4 +1,12 @@
-# topology_detector.py - FIXED VERSION
+
+# topology_detector.py
+# SDN Topology Change Detector — Ryu Controller
+
+# What this file does:
+#   - Connects to Mininet switches via OpenFlow 1.3
+#   - Installs table-miss and per-flow match-action rules
+#   - Monitors topology events (switch join/leave, link add/delete)
+#   - Logs all topology changes to topology_changes.log
 
 from ryu.base import app_manager
 from ryu.controller import ofp_event
